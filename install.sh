@@ -6,12 +6,17 @@ sudo pacman -S hyprpaper
 sudo pacman -S waybar
 sudo pacman -S swaync  # notifications
 
+# Audio & Bluetooth
+sudo pacman -S pipewire, pipewire-pulse, wireplumber
+sudo pacman -S bluez, bluez-libs, bluez-utils
+
+# Main Apps
 sudo pacman -S kitty   # shell
 sudo pacman -S nvim    # editor
 sudo pacman -S yazi    # fileManager
 sudo pacman -S firefox # browser
 
-# KDE Backups
+# KDE Backups Apps
 sudo pacman -S kate    # editor
 sudo pacman -S dolphin # fileManager
 
