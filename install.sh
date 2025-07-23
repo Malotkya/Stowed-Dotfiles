@@ -13,4 +13,10 @@ sudo pacman -S firefox # browser
 sudo pacman -S kate    # editor
 sudo pacman -S dolphin # fileManager
 
-
+sudo pacman -S stow
+# stow
+stow hyprland
+stow waybar
+stow yzai
+stow nvim
+stow bash
