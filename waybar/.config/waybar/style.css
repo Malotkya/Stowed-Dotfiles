@@ -39,11 +39,9 @@ window > box {
 }
 
 #workspaces {
-    margin-left: 8px;
+    margin-left: 1px;
     margin-top: 1px;
     margin-bottom: 1px;
-    padding-left: 2px;
-    padding-right: 2px;
     color: #b4befe;
 }
 
@@ -123,8 +121,6 @@ window > box {
 
 #custom-power {
     color: red;
-    padding-left: 5px;
-    padding-right: 5px;
 }
 
 menu {
@@ -134,14 +130,18 @@ menu {
 
 menuitem {
     min-height: 30px;
-
-    background: #23013f;
+    background: rgb(78, 78, 78);
     color: #b4befe;
 }
 
 menuitem:hover {
-    background: #b4befe;
-    color: #23013f;
+    background: rgb(94, 94, 94);
+
+}
+
+#custom-notification {
+  color: #b4befe;
+  margin-left: 2px;
 }
 
 #custom-media {

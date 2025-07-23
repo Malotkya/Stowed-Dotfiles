@@ -3,17 +3,17 @@
     <object class="GtkMenu" id="menu">
         <child>
             <object class="GtkMenuItem" id="suspend">
-                <property name="label">Suspend</property>
+                <property name="label">⏸ Suspend</property>
             </object>
         </child>
         <child>
             <object class="GtkMenuItem" id="hibernat">
-                <property name="label">Hibernate</property>
+                <property name="label">⏾ Hibernate</property>
             </object>
         </child>
         <child>
             <object class="GtkMenuItem" id="shutdown">
-                <property name="label">Shutdown</property>
+                <property name="label">⏻ Shutdown</property>
             </object>
         </child>
         <child>
@@ -21,7 +21,7 @@
         </child>
         <child>
             <object class="GtkMenuItem" id="reboot">
-                <property name="label">Reboot</property>
+                <property name="label">🗘 Reboot</property>
              </object>
         </child>
     </object>
