@@ -4,6 +4,8 @@
 sudo pacman -S hyprland
 sudo pacman -S hyprpaper
 sudo pacman -S waybar
+sudo pacman -S swaync  # notifications
+
 sudo pacman -S kitty   # shell
 sudo pacman -S nvim    # editor
 sudo pacman -S yazi    # fileManager
@@ -16,6 +18,7 @@ sudo pacman -S dolphin # fileManager
 sudo pacman -S stow
 # stow
 stow hyprland
+stow swaync
 stow waybar
 stow yzai
 stow nvim
