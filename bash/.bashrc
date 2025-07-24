@@ -12,7 +12,3 @@ PS1='[\u@\h \W]\$ '
 
 export EDITOR=nvim
 
-
-if uwsm check may-start; then
-    exec uwsm start hyprland-uwsm.desktop
-fi
