@@ -1,3 +1,5 @@
+@define-color lavendar #D3D3FF;
+
 * {
     border: 0px;
     padding: 0;
@@ -7,7 +9,7 @@
 }
 
 window#waybar {
-    background: transparent;
+    background: rgba(0, 0, 0, 0.2);
     margin-left: 20px;
     font-size: 15px;
 }
@@ -29,13 +31,13 @@ window > box {
     padding-left: 15px;
     margin-right: 10px;
     font-size: 22px;
-    color: #b4befe;
+    color: @lavendar;
 }
 
 #idle_inhibitor {
     padding-left: 5px;
     margin-right: 5px;
-    color: #b4befe;
+    color: @lavendar;
     font-size: 17px;
 }
 
@@ -43,14 +45,14 @@ window > box {
     margin-left: 1px;
     margin-top: 1px;
     margin-bottom: 1px;
-    color: #b4befe;
+    color: @lavendar;
 }
 
 #workspaces button {
     margin-left: 2px;
     margin-right: 2px;
     border-radius: 20px;
-    color: #b4befe;
+    color: @lavendar;
 }
 
 #workspaces button:hover {
@@ -58,23 +60,23 @@ window > box {
 }
 
 #workspaces button.active {
-    border: 1px solid #b4befe;
+    border: 1px solid @lavendar;
     font-weight: bold;
 }
 
 #pulseaudio {
     margin-right: 5px;
-    color: #b4befe;
+    color: @lavendar;
 }
 
 #temperature {
-    color: #b4befe;
+    color: @lavendar;
     margin-left: 2px;
     margin-right: 2px;
 }
 
 #battery {
-    color: #b4befe;
+    color: @lavendar;
     margin-left: 2px;
     margin-right: 2px;
 }
@@ -92,18 +94,18 @@ window > box {
 }
 
 #keyboard-state > label {
-    color: #b4befe;
+    color: @lavendar;
     margin: 5px 0;
     padding: 0 5px;
 }
 
 #keyboard-state > label.locked {
     color: #23013f;
-    background: #b4befe;
+    background: @lavendar;
 }
 
 #window {
-    color: #b4befe;
+    color: @lavendar;
 }
 
 
@@ -117,7 +119,7 @@ window > box {
     padding-left: 5px;
     padding-right: 5px;
 
-    color: #b4befe;
+    color: @lavendar;
 }
 
 #custom-power {
@@ -133,7 +135,7 @@ menu {
 menuitem {
     min-height: 30px;
     background: rgb(78, 78, 78);
-    color: #b4befe;
+    color: @lavendar;
 }
 
 menuitem:hover {
@@ -142,7 +144,7 @@ menuitem:hover {
 }
 
 #custom-notification {
-  color: #b4befe;
+  color: @lavendar;
   margin-left: 5px;
   font-size: 17px;
 }
