@@ -3,8 +3,13 @@
 # Environment
 sudo pacman -S hyprland
 sudo pacman -S hyprpaper
+sudo pacman -S hypridle
+sudo pacman -S hyprlock
 sudo pacman -S waybar
 sudo pacman -S swaync  # notifications
+
+# Greeter Theme
+qt4-svg qt6-declarative 
 
 # Audio & Bluetooth
 sudo pacman -S pipewire, pipewire-pulse, wireplumber
@@ -28,3 +33,16 @@ stow waybar
 stow yzai
 stow nvim
 stow bash
+
+# Greeter
+sudo pacman -S sddm layer-shell-qt layer-shell-qt5
+sudo cp -f ./sddm.conf /etc/sddm.conf
+
+# Greeter Theme
+sudo pacman -S qt6 qt6-svg qt6-multimedia
+sudo git clone -b master --depth 1 https://github.com/keyitdev/sddm-astronaut-theme.git /usr/share/sddm/themes/sddm-astronaut-theme
+sudo mv -r /usr/share/sddm/themes/sddm-astronaut-theme/Fonts/* /usr/share/fonts/
+sudo ln -f ~/dotfiles/greeter.desktop /usr/share/sddm/themes/sddm-astronaut-theme/metadata.desktop
+sudo ln -s ~/dotfiles/greeter.conf /usr/share/sddm/themes/sddm-astronaut-theme/Themes/hyprland.conf
+sudo ln -s ~/.config/hypr/background.jpg /usr/share/sddm/themes/sddm-astronaut-theme/Backgrounds/hyprland.jpg
+echo "[Theme]\nCurrent=sddm-astronaut-theme" | sudo tee /etc/sddm.conf
